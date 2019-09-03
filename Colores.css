@@ -1,0 +1,28 @@
+body{
+	background-color:#1DD6E6;
+}
+h1{
+	text-align:center;
+}
+table1{
+	border-color:#black;
+	border:20;
+	background:#0B9CCE;
+	margin-left: center;
+}
+table2{
+	border-color:#black;
+	border:20;
+	background:#0B9CCE;
+	margin:center;
+}
+table3{
+	border-color:#black;
+	border:20;
+	background:#0B9CCE;
+	margin-right: center;
+}
+tr, td{
+	text-align:center;
+	font:verdana;
+}

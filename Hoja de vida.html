@@ -1,0 +1,180 @@
+<HTML>
+<Head>
+   <Title>Hoja de Vida</Title>
+   <script type="text/javascript">
+    function validar() {
+		band:
+        miCampoTexto1 = document.getElementById("nombre1");
+		miCampoTexto2 = document.getElementById("apellido1").value;
+		miCampoTexto3 = document.getElementById().value;
+		miCampoTexto4 = document.getElementById().value;
+		miCampoTexto5 = document.getElementById().value;
+		miCampoTexto6 = document.getElementById().value;
+		miCampoTexto7 = document.getElementById().value;
+		miCampoTexto8 = document.getElementById().value;
+		miCampoTexto9 = document.getElementById().value;
+		if (miCampoTexto.length == 0) {
+            band=false;			
+        }else{
+			band=true;
+		}
+    }
+</script>
+</Head>
+	<body bgcolor="#1DD6E6">
+<body>
+<form id="form1" method="GET" onsubmit="return validar()">
+   <font color="blue" face="arial">
+	<h1 align="center"><i>Hoja De Vida</i></h1>
+  </font>
+   <table>
+   <table border="2" style="margin: 0 auto"; bgcolor="#2A86A2">
+      <table>
+				<tr>
+					<td colspan="3">
+						<h3>I. INFORMACIÓN GENERAL</h3></td>
+				</tr>
+				<tr>	
+					<td><h3>Apellido(s) del aspirante:</h3></td>
+					<td><h3>Nombre(s) del aspirante:</h3></td>
+					<td rowspan="4">
+						<img src="descarga.png"></img></td>
+				</tr>
+					<tr>
+					<td><input type="text" id="apellidos" name="apellidos"></input></td>
+					<td><input type="text" id="nombres" name="nombres"></input></td>
+				</tr>
+				<tr>
+					<td><h3>Fecha de nacimiento:</h3></td>
+					<td><h3>Ciudad de residencia:</h3></td>
+				</tr>
+				<tr>
+					<td><input type="date" id="nacimiento" name="nacimiento"></input></td>
+					<td><input type="text" id="ciudad" name="ciudad"></input></td>
+				</tr>
+				<tr>
+					<td><h3>Dirección de residencia:</h3></td>
+					<td><h3>Correo electrónico:</h3></td>
+					<td><h3>Nacionalidad:</h3></td>
+				</tr>
+				<tr>
+					<td><input type="text" id="direccion" name="direccion"></input></td>
+					<td><input type="email" id="correo" name="correo"></input></td>
+					<td><input type="text" id="nacionalidad" name="nacionalidad"></input></td>
+				</tr>
+				<tr>
+					<td><h3>Celular:</h3></td>
+					<td><h3>Telefono fijo:</h3></td>
+					<td><h3>Estado civil:</h3></td>
+				</tr>
+				<tr>
+					<td><input type="number" id="celular" name="celular"></input></td>
+					<td><input type="number" id="tel" name="tel"></input></td>
+					<td><input type="text" id="estado" name="estado"></input></td>
+				</tr>
+				<tr>
+					<td><h3>Tipo de documento:</h3></td>
+					<td><h3>Número de documento:</h3></td>
+					<td><h3>Lugar de expedición:</h3></td>
+				</tr>
+				<tr>
+					<td><select id="tipo"><option>Cedula de ciudadanía</option>
+						<option>Tarjeta de Identidad</option>
+						<option>Cedula de extranjería</option></select></td>
+					<td><input type="number" id="documento" name="documento"></input></td>
+					<td><input type="text" id="expedicion" name="expedicion"></input></td>
+				</tr>
+			</table>
+			<table>
+					<tr>
+						<td colspan="3">
+							<h3>II. INFORMACIÓN ACADÉMICA</h3></td>
+						</tr>
+					<tr>
+						<td><h3>Estudios realizados:</h3></td>
+						<td><h3>¿En qué institución?</h3></td>
+						<td><h3>Fecha en que terminó:</h3></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudio1" name="estudio1"></input></td>
+						<td><input type="text" id="ins1" name="ins1"></input></td>
+						<td><input type="date" id="fecha1" name="fecha1"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudio2" name="estudio2"></input></td>
+						<td><input type="text" id="ins2" name="ins2"></input></td>					
+						<td><input type="date" id="fecha2" name="fecha2"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudio3" name="estudio3"></input></td>
+						<td><input type="text" id="ins3" name="ins3"></input></td>
+						<td><input type="date" id="fecha3" name="fecha3"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudio4" name="estudio4"></input></td>
+						<td><input type="text" id="ins4" name="ins4"></input></td>
+						<td><input type="date" id="fecha4" name="fecha4"></input></td>
+					</tr>
+					<tr>
+						<td><h3>¿Estudia actualmente?</h3></td>
+						<td><h3>¿Qué carrera?</h3></td>
+						<td><h3>¿En cúal institución?</h3></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudia" name="estudia"></input></td>
+						<td><input type="text" id="carrera" name="carrera"></input></td>
+						<td><input type="text" id="institucion" name="institucion"></input></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td colspan="3">
+							<h3>III. INFORMACIÓN LABORAL</h3></td>
+					</tr>
+					<tr>
+						<td><h3>¿Dónde a trabajado?</h3></td>
+						<td><h3>¿Qué cargo desempeñó?</h3></td>
+						<td><h3>Fecha que se retiró:</h3></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="trabajo1" name="trabajo1"></input></td>
+						<td><input type="text" id="empresa1" name="empresa1"></input></td>
+						<td><input type="date" id="retiro1" name="retiro1"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="trabajo2" name="trabajo2"></input></td>
+						<td><input type="text" id="empresa2" name="empresa2"></input></td>
+						<td><input type="date" id="retiro2" name="retiro2"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="trabajo3" name="trabajo3"></input></td>
+						<td><input type="text" id="empresa3" name="empresa3"></input></td>
+						<td><input type="date" id="retiro3" name="retiro3"></input></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="trabajo4" name="trabajo4"></input></td>
+						<td><input type="text" id="empresa4" name="empresa4"></input></td>
+						<td><input type="date" id="retiro4" name="retiro4"></input></td>
+					</tr>
+					<tr>
+						<td><h3>Trabaja actualmente?</h3></td>
+						<td colspan="2"><h3>¿En cúal empresa?</h3></td>
+					</tr>
+					<tr>
+						<td><input type="text" id="estudia" name="estudia"></input></td>
+						<td colspan="2"><input type="text" id="empresa" name="empresa"></input></td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<input name="button" type="submit" value="Enviar" onclick="return validar()"></input>
+						</td>
+					</tr>
+				</table>
+		<script>
+			if (band==true){
+				
+		</script>
+		</form>
+	</table>
+	</body>
+	</html>
